@@ -426,15 +426,16 @@
         </div>
         <div class="footer-subs-box">
           <p class="footer-text">Подпишитесь на рассылку</p>
-          <form class="form-footer" action="">
-            <label class="form-title" for="mail"></label>
-            <input class="form-border" type="email" name="mail" id="mail" placeholder="E-mail">            
-          </form>
-          <button class="button-footer" type="submit">Подписаться
-            <svg class="form-svg" width="12px" height="12px">
-              <use href="./images/symbol-defs.svg#icon-plane"></use>
-            </svg>
-          </button>
+          <div class="form-footer">
+            <form>
+              <label for="mail"></label>
+              <input class="input-footer" type="email" name="mail" id="mail" placeholder="E-mail">            
+            </form>
+            <button class="button-footer" type="submit">Подписаться<svg class="footer-form-svg" width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-plane"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
@@ -482,10 +483,11 @@
 
           <div class="modal-agree">            
             <label class="lable-checkbox">
-              <input class="input-checkbox" type="checkbox" name="contract-and-mailing" value="conract" id="contract-and-mailing" />
+              <input class="input-checkbox" type="checkbox" name="contract-and-mailing" value="conract"/>
               <span class="icon"></span>
-              Соглашаюсь с рассылкой и принимаю 
-              <a href="">Условия договора</a></label>
+              Соглашаюсь с рассылкой и принимаю   
+              <a href=""> Условия договора</a>
+            </label>
           </div>          
           <div class="modal-button-submit">
             <button class="modal-button" type="submit">Отправить</button>

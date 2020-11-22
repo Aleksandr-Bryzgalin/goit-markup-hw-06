@@ -270,7 +270,7 @@ body {
 }
 
 .footer-link-box {
-  padding-left: 156px;
+  padding-left: 70px;
 }
 
 .footer-text {
@@ -326,7 +326,11 @@ body {
 }
 
 .button-footer {
-  padding: 10px 32px;
+  display: flex;
+
+  position: relative;
+
+  padding: 10px 29px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
@@ -347,21 +351,41 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-form-svg {
+  position: absolute;
+  top: 12px;
+  right: 28px;
+  margin-left: 10px;
+}
+
 .button-footer:hover,
 .button-footer:focus {
   background-color: var(--button-accent);
 }
 
 .form-footer {
-  position: relative;
-
   display: flex;
+}
+
+.input-footer {
+  min-width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  color: var(--footer-contacts);
 
   background-color: var(--bg-dark-color);
-  box-sizing: border-box;
+  border: 1px solid var(--footer-form-border);
   border-radius: 4px;
+}
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.input-footer::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: var(--footer-contacts);
 }
 
 /* Стили для "Студия" */
@@ -975,7 +999,6 @@ body {
 .modal-agree {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -998,6 +1021,9 @@ body {
 
 .icon {
   display: inline-block;
+
+  margin-right: 7px;
+
   width: 15px;
   height: 15px;
   border: 2px solid var(--modal-checkbox);
@@ -1009,12 +1035,11 @@ body {
   background-origin: border-box;
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url(../images/symbol-defs.svg#icon-agree);
-  background-repeat: no-repeat;
+  background-image: url(../images/icon-check.svg);
   background-size: contain;
 }
 
 .lable-checkbox {
-  width: 100%;
-  margin-left: 9px;
+  display: flex;
+  align-items: center;
 }
