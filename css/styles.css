@@ -297,6 +297,8 @@ body {
   justify-content: center;
   align-items: center;
 
+  outline: none;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 44px;
@@ -623,6 +625,8 @@ body {
   justify-content: center;
   align-items: center;
 
+  outline: none;
+
   width: 170px;
   height: 90px;
 
@@ -658,6 +662,8 @@ body {
   border-radius: 4px;
   border: 1px solid transparent;
 
+  outline: none;
+
   background-color: var(--bg-team-portfolio-filters);
 
   color: var(--title-text-color);
@@ -687,6 +693,7 @@ body {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  outline: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -711,6 +718,7 @@ body {
 .overlay {
   position: relative;
   overflow: hidden;
+  outline: none;
 }
 
 .projects-link:hover .projects-text,
@@ -780,6 +788,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  outline: none;
 
   width: 44px;
   height: 44px;
@@ -903,6 +913,7 @@ body {
   border: 1px solid var(--modal-field-border);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
